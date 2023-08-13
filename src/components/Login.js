@@ -123,7 +123,7 @@ const Login = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://mynotes-backend-fx1l.onrender.com//api/auth/login", {
+      const response = await fetch("https://mynotes-backend-fx1l.onrender.com/api/auth/login", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -148,7 +148,7 @@ const Login = (props) => {
 
    
     } catch (error) {
-      console.error("Error:", error);
+      console.error("Error cz of not logging in:", error);
       // Handle error, show error message, etc.
     }
   };
