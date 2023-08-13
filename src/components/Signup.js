@@ -10,7 +10,7 @@ const Signup = (props) => {
     e.preventDefault();
     const {name,email,password} =credentials;
     try {
-      const response = await fetch("https://zesty-chaja-b0fb67.netlify.app//api/auth/createuser", {
+      const response = await fetch("https://mynotes-backend-fx1l.onrender.com//api/auth/createuser", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
